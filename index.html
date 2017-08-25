@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <title>J-Wood</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $("#header").removeClass("default");
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 600) {
+          $("#header").addClass("default").fadeIn('fast');
+        } else {
+          $("#header").removeClass("default").fadeIn('fast');
+        };
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <div id="top" class="sec welcome">
+        <nav id="header" class="sec-nav">
+          <ul class="sec-nav__ul">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <figure>
+          <div>
+            <img src="img/logo.png" alt="Logo" title="Logo">
+            <h1 class="h1"><b>JWOOD</b>PHOTOGRAPHY</h1>
+          </div>
+        </figure>
+        <span class="mob-scroll"><a href="#about"><img src="img/darrowhead.png" alt="Arrow down" title="Scroll down" class="img-scroll"></a></span>
+        <div class="scroll">
+          <p>scroll down to see more</p>
+          <a href="#about"><img src="img/darrowhead.png" alt="Arrow down" title="Scroll down"></a>
+        </div>
+      </div>
+
+     <div id="about" class="sec about">
+        
+        <section>
+          <img src="img/JWood.png" alt="Jason Wood">
+          <div>
+            <h2 class="h2">About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Jason Wood</p>
+          </div>
+        </section>
+        <span class="mob-scroll"><a href="#portfolio"><img src="img/darrow_grey.png" alt="Arrow down" title="Scroll down" class="img-scroll"></a></span>
+        <div class="scroll">
+          <p>keep scrolling, there is still more to come.</p>
+          <a href="#portfolio"><img src="img/darrow_grey.png" alt="Arrow down" title="Scroll down"></a>
+        </div>
+      </div>
+
+      <div id="portfolio" class="sec portfolio">
+        
+        <section>
+        <h2 class="h2">Portfolio</h2>
+          <span>
+            <a href="#"><img src="img/p1.png" alt="Portfolio"></a>
+            <a href="#"><img src="img/p2.png" alt="Portfolio"></a>
+            <a href="#"><img src="img/p3.png" alt="Portfolio"></a>
+            <a href="#"><img src="img/p4.png" alt="Portfolio"></a>
+            <a href="#"><img src="img/p5.png" alt="Portfolio"></a>
+            <a href="#"><img src="img/p6.png" alt="Portfolio"></a>
+            <a href="#"><img src="img/p7.png" alt="Portfolio"></a>
+            <a href="#"><img src="img/p8.png" alt="Portfolio"></a>
+            <a href="#"><img src="img/p9.png" alt="Portfolio"></a>
+            <a href="#"><img src="img/p10.png" alt="Portfolio"></a>
+          </span>
+        </section>
+        <span class="mob-scroll"><a href="#contact"><img src="img/darrowhead.png" alt="Arrow down" title="Scroll down" class="img-scroll"></a></span>
+        <div class="scroll">
+          <p>do you want to see it with your own eyes? Scroll!</p>
+          <a href="#contact"><img src="img/darrowhead.png" alt="Arrow down" title="Scroll down"></a>
+        </div>
+      </div>
+
+      <div id="contact" class="sec contact">
+        
+        <section>
+          <p>MAIL:</p>
+          <p><a href="mailto:jason@wood.com" title="email">Jason@wood.com</a></p>
+          <p>phone:</p>
+          <p><a href="tel:+44212432444" title="phone">+44 212 432 444</a></p>
+          <p>social media:</p>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="img/Facebook.png" alt="Facebook" title="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/Twitter.png" alt="Twitter" title="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/Instagram.png" alt="Instagram" title="Instagram"></a>
+          </div>
+            <span class="mob-scroll"><a href="#top"><img src="img/up.png" alt="Arrow up" title="Scroll up" class="img-scroll"></a></span>
+            <div class="scroll">
+              <a href="#top"><img src="img/up.png" alt="Arrow up" title="Scroll up"></a>
+              <p>Up</p>
+            </div>
+        </section>
+        
+        <div class="footer">
+          <p>DESIGNED by </p>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
